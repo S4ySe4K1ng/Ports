@@ -60,6 +60,8 @@ if __name__ == "__main__":
                 ports = []
                 for x in range(0, 65535):
                     ports.append(x)
+                while not PORT_.empty():
+                    PORT_.get()
                 ports_ = []
                 for x in ports:
                     PORT_.put(x)
